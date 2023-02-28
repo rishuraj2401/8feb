@@ -10,7 +10,7 @@ function Glogin() {
     const navigate = useNavigate()
     // const history= useHistory()
     const [logs, setLogs] = useState({ cEmail: "", cpassword: "" })
-    const [errr, setErr] = useState({ emEr: '', paEr: '' })
+    const [errr, setErr] = useState({ emEr: ' ', paEr: '' })
     const onchanging = (e) => {
         // e.preventDefault();
         const name = e.target.name;
@@ -81,11 +81,10 @@ function Glogin() {
                         <p>𝐆𝐮𝐚𝐫𝐝𝐬 𝐏𝐨𝐫𝐭𝐚𝐥</p>
                     </div>
                     <div className="log1b">
-                    <span>{errr.emEr}</span><br/>
-                        <label htmlFor="">𝓔𝓶𝓪𝓲𝓵</label>
+                   
+                        <label htmlFor="">𝓔𝓶𝓪𝓲𝓵 <span>{errr.emEr}</span></label> 
                         <input type='email' className='log2' name="cEmail" value={logs.cEmail} onChange={onchanging} /> <br />
-                        <span>{errr.paEr}</span><br/>
-                        <label htmlFor="">𝓟𝓪𝓼𝓼𝔀𝓸𝓻𝓭</label>
+                        <label htmlFor="">𝓟𝓪𝓼𝓼𝔀𝓸𝓻𝓭 <span>{errr.paEr}</span><br/></label>
                         <input type='password' className='log2' name="cpassword" value={logs.cpassword} onChange={onchanging} />
                         <div className="log">
                             <button type='submit' onClick={onlogin}>Login</button>

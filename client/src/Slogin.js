@@ -80,12 +80,9 @@ function Slogin() {
                     </div>
                     {/* <div className="log1a"></div> */}
                     <div className="log1b">
-                    <span>{errr.emEr}</span><br/>
-                        <label htmlFor="">𝓔𝓶𝓪𝓲𝓵</label>
+                        <label htmlFor="">𝓔𝓶𝓪𝓲𝓵  <span>{errr.emEr}</span><br/></label>
                        <input type='email' className='log2' name="sEmail" value={logs.sEmail} onChange={onchanging} /> 
-                        <br /> <span>{errr.paEr}</span>
-                        <br/>
-                        <label htmlFor="">𝓟𝓪𝓼𝓼𝔀𝓸𝓻𝓭</label>
+                        <label htmlFor="">𝓟𝓪𝓼𝓼𝔀𝓸𝓻𝓭 <span>{errr.paEr}</span></label>
                         <input type='password' className='log2' name="spassword" value={logs.spassword} onChange={onchanging} /><br/> 
                        
                         <div className="log">

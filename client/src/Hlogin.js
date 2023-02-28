@@ -78,12 +78,11 @@ function Hlogin() {
             <p>𝐎𝐟𝐟𝐢𝐜𝐞 𝐏𝐨𝐫𝐭𝐚𝐥</p>
           </div>
           <div className="log1b">
-          <span>{errr.emEr}</span><br/>
-            <label htmlFor="">𝓔𝓶𝓪𝓲𝓵    </label>
-            <input type="email" className='log2' name="cEmail" value={logs.cEmail} onChange={onchanging}  />  <br /><br/>
-            <span>{errr.paEr}</span><br/>
-            <label htmlFor="">𝓟𝓪𝓼𝓼𝔀𝓸𝓻𝓭 </label>
-            <input type='password' className='log2' name="cpassword" value={logs.cpassword} onChange={onchanging} /><br/> 
+            <label htmlFor="">𝓔𝓶𝓪𝓲𝓵 <span>{errr.emEr}</span>   </label>
+            <input type="email" className='log2' name="cEmail" value={logs.cEmail} onChange={onchanging}  />  
+           
+            <label htmlFor="">𝓟𝓪𝓼𝓼𝔀𝓸𝓻𝓭  <span>{errr.paEr}</span></label>
+            <input type='password' className='log2' name="cpassword" value={logs.cpassword} onChange={onchanging} />
             <div className="log">
               <button type='submit' onClick={onlogin}>Login</button>
               <p><Link to="/" id="log">Don't have an account? Register here </Link></p>

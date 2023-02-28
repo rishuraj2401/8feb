@@ -136,14 +136,23 @@ function Permit() {
     {<Navb/>}
     <div className="maine2">
     <form method="POST"> </form>
+    <div className='gcmain'>
     <div className="gc">
     <label htmlFor="cheaking">Enter the roll number:</label>
     <input type="text" name="roll" id="" value={roll} onChange={onchangingroll}/><br/>
     <button type='button' onClick={call}>Check</button>
     <button type='submit' onClick={updatePost}>Permited</button>
     </div>
+    <div className='gc2'>
+   <p>Recent Submition: {abc[a].Roll}</p>
+   <p>Status:  {abc[a].Permitted}</p>
+   <button type='button' onClick={onminus}>Previous</button>
+   <button type='button' onClick={onplus}>Next</button>
+   </div>
+    </div>
     <div method ="GET">
     <div className="gatecont">
+      <div></div>
       <div className="gc1a">
       <div className="gc1">
        <p>Name: </p> <p>{udata.name}</p>
@@ -190,17 +199,14 @@ function Permit() {
         </div>
         <div className="gc1">
         <p>Allowed:</p> <p>{udata.Allowed}</p>
-        </div></div>
+        </div>
+        
+        </div>
       {/* <h1>Last Submition :{arr1.map(item=><p>{item}</p>)}</h1> */}
       {/* <h2> {abc.map(item=><p>{item.Roll} Status:{item.Permitted}</p>)}</h2> */}
      
     </div>
-    <div className='gc2'>
-   <p>Recent Submition: {abc[a].Roll}</p>
-   <p>Status:  {abc[a].Permitted}</p>
-   <button type='button' onClick={onminus}>Previous</button>
-   <button type='button' onClick={onplus}>Next</button>
-   </div>
+   
     </div>
     </div>
     </>

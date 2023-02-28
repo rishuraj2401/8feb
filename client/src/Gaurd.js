@@ -74,18 +74,21 @@ function Gaurd() {
 
       <div className="maine">
       <form method="POST"> </form>
-      <div className="gc">
+      <div className="gcg">
       <label htmlFor="cheaking">Enter the roll number:</label>
-      <input type="text" name="roll" id="" value={roll} onChange={onchangingroll}/>
-      <button type='button' onClick={call}>Check</button><br/>
+      <input type="text" name="roll" id="" value={roll} onChange={onchangingroll}/><br/>
+      <button type='button' onClick={call}>Check</button>
       <button type='submit' onClick={updateAllow}>Allowed</button>
-//       <button type='submit' onClick={updateReturn} style={{float:"right"}} >Returned</button>
+     {/* <button type='submit' onClick={updateReturn} style={{float:"right"}} >Returned</button> */}
       </div>
 
       <div method ="GET">
       <div className="gatecont">
+      <div></div>
+
         <div className="gc1a">
-        <div className="gc1">
+
+       <div className="gc1">
          <p>Name: </p> <p>{udata.name}</p>
         </div>
         {/* <div className="gc1"> */}
@@ -112,7 +115,7 @@ function Gaurd() {
           <p>Leaving-Date:</p> <p>{udata.Ld}</p>
           </div>
           <div className="gc1">
-//           <p>Returned:</p> <p style={{color:"black"}}> {udata.return}</p>
+        {/* <p>Returned:</p> <p style={{color:"black"}}> {udata.return}</p> */}
           </div></div>
           <div className="gc1b">
           <div className="gc1">

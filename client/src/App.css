@@ -120,7 +120,7 @@
 }
 
 .maine {
-  background-image: repeating-radial-gradient(rgb(82, 1, 1), black);
+  background-image: repeating-radial-gradient(rgb(71, 59, 59), black);
   background-position: center;
   background-size: cover;
   /* height: 150%; */
@@ -135,18 +135,19 @@
   /* max-height: fit-content; */
 }
 .maine2 {
-  background-image: repeating-radial-gradient(rgb(82, 1, 1), black);
+  background-image: repeating-radial-gradient(rgb(71, 59, 59), black);
   background-position: center;
   background-size: cover;
   /* height: 150%; */
   /* background-color: aquamarine; */
   /* display:flow-root; */
   height: 100%;
-  min-height: fit-content;
+  min-height: 100vh;
   padding-top: 4%;
   padding-bottom: 4%;
   margin-bottom: 0%;
   width: 100vw;
+ 
   /* max-height: fit-content; */
 }
 .maine1 {
@@ -186,18 +187,21 @@
 }
 
 .l1 {
-  background-color: #F23030;
+  background-color: #0e0e0e;
   box-shadow: 10px 10px 10px black;
   margin: 5vw;
   border-radius: 2vw 3vw 1vw;
+  padding: 2vh;
   /* padding-left:3ev ; */
 }
 
 .r1 {
-  background-color: #F28705;
+  background-color: #0e0e0e;
   box-shadow: 10px 10px 10px black;
   margin: 5vw;
   border-radius: 2vw 3vw 1vw;
+  padding: 2vh;
+
 }
 
 .z {
@@ -226,26 +230,47 @@
   position: relative;
   margin-left: 90%;
 }
-
 .gc {
-  background-image: radial-gradient(#F28705, #F23030);
+  /* background-image: radial-gradient(#090909, #222020); */
+  background-color:  #0e0e0e;
   box-shadow: 10px 10px 10px black;
-  margin: 2vw 30vw 1vw 28vw;
+  /* margin: 2vw 30vw 1vw 28vw; */
+  margin: 2vw 3vw 1vw 12vw;
+
+  /* margin: 4vw; */
   border-radius: 2vw 3vw 1vw;
   /* width: 50vw;
   height: 10vw; */
-  padding: 4vw;
+  padding: 2vw;
+  justify-content: space-between;
+}
+.gcg {
+  /* background-image: radial-gradient(#090909, #222020); */
+  background-color:  #0e0e0e;
+  box-shadow: 10px 10px 10px black;
+  margin: 2vw 30vw 1vw 28vw;
+  /* margin: 2vw 3vw 1vw 2vw; */
+
+  /* margin: 4vw; */
+  border-radius: 2vw 3vw 1vw;
+  /* width: 50vw;
+  height: 10vw; */
+  padding: 2vw;
   justify-content: space-between;
 }
 
 .gc2 {
-  background-image: radial-gradient(#F28705, #F23030);
+  background-color:  #0e0e0e;
+ 
+  /* background-image: radial-gradient(#F28705, #F23030); */
   box-shadow: 10px 10px 10px black;
-  margin: 2vw 30vw 1vw 28vw;
+  margin: 2vw 12vw 1vw 2vw;
+  /* margin: 4vw; */
+
   border-radius: 2vw 3vw 1vw;
   /* width: 50vw;
   height: 15vw; */
-  padding: 4vw;
+  padding: 2vw;
   justify-content: space-between;
   /* display: grid; */
   grid-template-columns: 50% 50%;
@@ -257,34 +282,42 @@
   
 }
 
-.gc label {
+.gc label ,.gcg label {
   font-size:clone(1.5rem ,1.5vw, 3rem);
   /* height: clone(1.5rem ,3vw ,3rem); */
+  color: white;
   width:clone(0.3rem ,3vw ,3rem) ;
 }
-.gc input{
+.gc input ,.gcg input {
 /* width: clone(10px,2vw,30px);
  */
 /* width: 20vw; */
 min-width: 6rem;
 /* max-width: clone(100px ,50%,200px); */
-width: 5vw;
+width: 8vw;
 }
 
-.gc button {
+.gc button ,.gcg button {
   margin-left:  1vw;
   /* width: 5vw; */
   /* font-size: 1.5vw; */
-  border-radius: 0.2vw;
+  border-radius: 1vw;
 }
 
 .gatecont {
   display: grid;
+  grid-template-columns:20% 30% 30%;
+}
+.gcmain{
+  display: grid;
   grid-template-columns: 50% 50%;
+ 
 }
 
 .gc1a {
-  background-image: radial-gradient(#3F7C85, #00CCBF);
+  background-color:  #0e0e0e;
+ 
+  /* background-image: radial-gradient(#3F7C85, #00CCBF); */
   box-shadow: 10px 10px 10px black;
   margin: 2vw;
   border-radius: 2vw 3vw 1vw;
@@ -292,7 +325,9 @@ width: 5vw;
 }
 
 .gc1b {
-  background-image: radial-gradient(#00CCBF, #0099DD);
+  background-color:  #0e0e0e;
+
+  /* background-image: radial-gradient(#00CCBF, #0099DD); */
   box-shadow: 10px 10px 10px black;
   margin: 2vw;
   border-radius: 2vw 3vw 1vw;
@@ -320,7 +355,9 @@ width: 5vw;
   height: 100vh;
   /* background-image:url("http://www.diegomallien.com/wp-content/uploads/2017/03/Meaning-of-travelling.jpg?x38602") ; */
   /* background-image:radial-gradient(#F28705, #F23030) ; */
-  background-image: radial-gradient(#026773, #3CA6A6);
+  /* background-image: radial-gradient(#026773, #3CA6A6); */
+  background-image: repeating-radial-gradient(rgb(71, 59, 59), black);
+
   width: 100%;
   /* background-color: aqua; */
   display: grid;
@@ -335,7 +372,7 @@ width: 5vw;
 .home1 {
   display: grid;
   grid-template-columns: 20% 30% 20%;
-  margin: 7%;
+  margin: 5%;
 }
 
 #regbtn {
@@ -360,7 +397,9 @@ width: 5vw;
   margin-top: 50px;
   color: white;
   text-shadow: 5px 5px 5px black;
-  background-image: radial-gradient(#024959, #012E40);
+  /* background-image: radial-gradient(#024959, #012E40); */
+  /* background-image: repeating-radial-gradient(rgb(71, 59, 59), black); */
+background-color:  #0e0e0e;
   box-shadow: 10px 10px 10px black;
   margin-right: 2vw;
   border-radius: 2vw 3vw 1vw;
@@ -377,7 +416,8 @@ width: 5vw;
 
 .hright {
   /* background-color: rgb(213, 75, 12); */
-  background-image: radial-gradient(#024959, #012E40);
+  background-color:  #0e0e0e;
+
   box-shadow: 10px 10px 10px black;
   margin-right: 2vw;
   border-radius: 2vw 3vw 1vw;
@@ -399,7 +439,7 @@ width: 5vw;
   text-shadow: 0.3vw 0.3vw 0.7vw black;
 
   /* margin: auto; */
-  animation: aaa 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1;
+  /* animation: aaa 5s cubic-bezier(0.39, 0.575, 0.565, 1) 1; */
 }
 
 .maine label,
@@ -413,7 +453,9 @@ width: 5vw;
   height: 100vh;
   /* background-image:url("pexels-nubia-navarro-\(nubikini\)-386009.jpg") ; */
   /* background-image: url("pexels-guillaume-hankenne-2792025.jpg"); */
-  background-image: radial-gradient(#F23030, black);
+  /* background-image: radial-gradient(#F23030, black); */
+  background-image: repeating-radial-gradient(rgb(71, 59, 59), black);
+
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -429,7 +471,9 @@ width: 5vw;
   height: 100vh;
   /* background-image:url("pexels-nubia-navarro-\(nubikini\)-386009.jpg") ; */
   /* background-image: url("pexels-mads-thomsen-1178448.jpg"); */
-  background-image: repeating-radial-gradient(#024959, black);
+  /* background-image: repeating-radial-gradient(#024959, black); */
+  background-image: repeating-radial-gradient(rgb(71, 59, 59), black);
+
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -444,7 +488,9 @@ width: 5vw;
 .glogin {
   height: 100vh;
   /* background-image:url("pexels-nubia-navarro-\(nubikini\)-386009.jpg") ; */
-  background-image: radial-gradient(red, black);
+  /* background-image: radial-gradient(red, black); */
+  background-image: repeating-radial-gradient(rgb(71, 59, 59), black);
+
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -470,7 +516,7 @@ width: 5vw;
 }
 
 .log1b {
-  background-color: #F28705;
+  background-color: #0e0e0e ;
   /* width: 38vw;
   height: 25vw; */
   margin-left: 4vw;
@@ -480,15 +526,23 @@ width: 5vw;
   border-radius: 2vw 3vw 1vw;
   animation: div 2s 1;
   padding: auto;
+  /* display: grid; */
 }
 .log1b label{
-margin-right: 2vw;
+display: grid;
+grid-template-columns: 60% 40%;
+/* background-color: #F28705; */
+text-align: right;
+}
+.log1b span{
+  text-align: left;
 }
 
 .log1a {
   margin-right: 3vw;
   margin-left: 7vw;
-  background-image: radial-gradient(rgb(255, 174, 0), rgb(111, 23, 9));
+  /* background-image: repeating-radial-gradient(rgb(71, 59, 59), black); */
+background-color:  #0e0e0e;
   box-shadow: 10px 10px 10px black;
   /* margin-right: 2vw; */
   border-radius: 2vw 3vw 1vw;
@@ -498,7 +552,8 @@ margin-right: 2vw;
 .log1a p {
   margin-top: 5vw;
   font-size: 5vw;
-  text-shadow: 0.5vw 0.8vw 1vw white;
+  color: white;
+  text-shadow: 0.5vw 0.8vw 1vw black;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -516,7 +571,7 @@ margin-right: 2vw;
   font-size: clamp(1.2rem ,1.5vw,15rem);
   font-family: cursive;
   text-shadow: 0.2vw 0.2vw 0.5vw black;
-  color: black;
+  color: white;
   position: relative;
 }
 
@@ -650,6 +705,10 @@ input {
     
 
   }
+  .slogin , .glogin,.hlogin{display: block;}
+.lo{height: 20vh;}
+.cont{margin-top: 6vh;}
+  
   .log1a{
     /* height: 30vh; */
     margin-right: 5vh;
@@ -696,6 +755,8 @@ input {
     height:100vh;
     overflow: hidden;
   }
+.gcmain{margin-top: 6vw;}
+
 }
 
 span {
